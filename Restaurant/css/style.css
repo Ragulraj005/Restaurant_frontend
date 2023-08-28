@@ -80,13 +80,13 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: #ffff;
-    padding: 1rem 7%;
+    background: white;
+    padding: 1.5rem 7%;
     display: flex;
-    align-items: centre;
+    align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -241,6 +241,28 @@ header .icons #menu-bars {
 
 }
 
+.box {
+    /* ... (other box styles) ... */
+    transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+.dishes .box-container .box {
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: red;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dishes .box-container .box:hover {
+    transform: scale(1.10);
+}
 
 .home .home-slider .slide .content h3 {
     color: var(--blackd);
@@ -276,6 +298,7 @@ header .icons #menu-bars {
     position: relative;
     overflow: hidden;
     text-align: center;
+    transform: scale(1.02);
 }
 
 .dishes .box-container .box .fa-heart,
@@ -460,6 +483,9 @@ header .icons #menu-bars {
 
 
 }
+
+
+
 
 .menu .box-container .box .image .fa-heart:hover {
     background-color: red;
